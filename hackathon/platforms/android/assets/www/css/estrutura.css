@@ -33,7 +33,7 @@ h6{ text-align: left; }
 .modal{ z-index: 2; }
 .modal#modalMap{ max-height: 100%; top: 3%; width: 92%; }
 .modal#modalMap #map-canvas{ min-height: 250px; max-height: 350px; }
-.chart{ float: none; } 
+.chart{ float: none; margin-bottom: 2rem; } 
 .percentage{ width: 110px; height: 110px; line-height: 110px; }
 .percent-chart{ display: none; text-align: center; }
 .chart-title{ text-align: center; }
@@ -63,6 +63,7 @@ h6{ text-align: left; }
 .circle#macarrao{ background-image: url(../img/macarrao.jpg); }
 .circle#queijo{ background-image: url(../img/queijo.jpg); }
 .circle#creme-de-leite{ background-image: url(../img/creme-de-leite.jpg); }
+.circle.mdi-action-query-builder{ font-size: 2rem !important; padding-top: 0.2rem; padding-left: 0.2rem; }
 /*==========*/
 
 /*Images*/

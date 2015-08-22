@@ -11,7 +11,6 @@ $(document).ready(function(){
 	       	'X-Api-Token' : TOKEN
 	   	   },
 	       success: function(data){
-	       		// data
 	           console.log(data);   
 	       },
 	       error: function(){

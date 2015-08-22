@@ -1,4 +1,8 @@
 $(document).ready(function(){	
+
+	TOKEN = "lWyD+pRka4fN0agKZINbMk08Js5jOWvHK8t1c2h/twv4/MKiJHPv5uYXJoc2y+55RCcqauLLHqGNHASX0UNI7A==";
+	DOMAIN_BASE = "http://hackathon.goldarkapi.com";
+
 	$('form').on('submit', function(e){
 		e.preventDefault();
 		var form = $(this).serializeArray();
@@ -8,7 +12,6 @@ $(document).ready(function(){
 	
 	$('.login-btn').click(function(){
 		var form = $('form#loginForm').serializeArray();
-		
 		login(form);
 	});
 	
@@ -28,45 +31,48 @@ $(document).ready(function(){
 });
 
 function login(form){
-	//$('.preloader-wrapper').fadeIn();
-	
-//	$.ajax({
-//        type: 'POST',
-//        data: form,
-//        url: 'http://hospedagem/login.php',
-//        success: function(data){
-//            console.log(data);
-//            alert('Your comment was successfully added');
-//            location.href = 'home.html';
-//        },
-//        error: function(){
-//            console.log(data);
-//            alert('There was an error adding your comment');
-//        }
-//    });
-	
-	location.href = 'dashboard.html';
+	$('.preloader-wrapper').fadeIn();
+	$.ajax({
+    	type: 'POST',
+    	data: form,
+    	url: DOMAIN_BASE + "/sessions",
+    	headers: {
+    		'X-Auth-Token' : TOKEN
+   		},
+    	success: function(data){
+        	console.log(data);
+            alert('Login efetuado com sucesso!');
+            location.href = 'dashboard.html';
+        },
+        error: function(){
+            console.log(data);
+            alert('Ocorreu um erro ao tentar cadastrar o usuário');
+        }
+    });
+
+    location.href = 'dashboard.html';
 }
 
 function cadastrarUsuario(form){	
-//	$.ajax({
-//        type: 'POST',
-//        data: form,
-//        url: 'http://hospedagem/cadastroUsuario.php',
-//        success: function(data){
-//            console.log(data);
-//            alert('Your comment was successfully added');
-//            $('form#cadastroForm').fadeOut('slow');
-//        	$('form#loginForm').fadeIn('slow').parent().css({
-//        		'padding-top':'11rem',
-//        		'transition':'padding-top 0.5s'
-//        	});
-//        },
-//        error: function(){
-//            console.log(data);
-//            alert('There was an error adding your comment');
-//        }
-//    });
+
+	$.ajax({
+       type: 'POST',
+       data: form,
+       url: DOMAIN_BASE + "/users",
+       success: function(data){
+           console.log(data);
+           alert('Conta criada com sucesso!');
+           $('form#cadastroForm').fadeOut('slow');
+       	   $('form#loginForm').fadeIn('slow').parent().css({
+       		'padding-top':'11rem',
+       		'transition':'padding-top 0.5s'
+       	});
+       },
+       error: function(){
+           console.log(data);
+           alert('Erro ao tentar cadastrar um usuário');
+       }
+   });
 	
 	$('form#cadastroForm').fadeOut('slow');
 	$('form#loginForm').fadeIn('slow').parent().css({

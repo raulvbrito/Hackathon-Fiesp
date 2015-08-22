@@ -3,12 +3,12 @@ function onDeviceReady() {
 }
 document.addEventListener('deviceready', onDeviceReady, true);
 
-$(function(){
+$(function(){	
 	$('select').material_select();
 	
 	var deviceHeight = $(document).height();
 	$('body').css('height', deviceHeight);
-	
+	 
 	$(".button-collapse").sideNav({
 		  menuWidth: 300,
 		  edge: 'left',

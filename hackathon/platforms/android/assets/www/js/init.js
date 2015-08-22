@@ -9,7 +9,12 @@ $(function(){
 	var deviceHeight = $(document).height();
 	$('body').css('height', deviceHeight);
 	
-	$(".button-collapse").sideNav();
+	$(".button-collapse").sideNav({
+		  menuWidth: 300,
+		  edge: 'left',
+		  closeOnClick: true
+	    }
+	  );
 	
 	$('.sync').click(function(){
 		sync();

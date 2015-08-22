@@ -158,6 +158,12 @@ i.mdi-action-perm-identity{
 #pendentes-list{
 	padding-top: 0;
 }
+.image-header{
+	background-image: url('../img/menu-banner.jpg');
+	height: 180px;
+	margin-top: -5rem; 
+	width: 100%
+}
 .menu-banner{ 
 	background-image: url('../img/menu-banner.jpg'); 
 	padding-bottom: 0.5rem !important;
@@ -177,6 +183,19 @@ i.mdi-action-perm-identity{
 .container#login-container .row{
 	padding: 10rem 1rem 6rem;
 	vertical-align: middle;
+}
+.btn-floating{
+	margin-top: -3rem;
+    margin-right: 2rem;
+    width: 70px !important;
+    font-size: 4.3rem !important;
+    height: 70px !important;
+}
+.btn-floating i{
+	font-size: 2.1rem !important;
+}
+.no-background .button-collapse, .no-background .brand-name, .no-background .mdi-action-search, .image-header{
+	text-shadow: 0px 0px 1px #444;
 }
 .row.content{
 	padding: 1.2rem 0.9rem;

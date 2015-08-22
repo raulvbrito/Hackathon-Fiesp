@@ -1,4 +1,5 @@
 body{ background-color: #e1e1e1; }
+.nav-wrapper.no-background{ background-color: transparent !important; }
 .container#login-container, .nav-wrapper, .collapsible-header.active, .report, .report:hover, .report.active, .side-nav li:hover, .side-nav li.active{	background-color: #198ec4 !important; }
 .card-title{ color: #198ec4 !important; }
 .report:hover, .report.active, .side-nav li:hover, .side-nav li.active, .report .mdi-action-assessment{ color: #fff; }

@@ -10,9 +10,7 @@ $(function(){
 	$('body').css('height', deviceHeight);
 	 
 	$(".button-collapse").sideNav({
-		  menuWidth: 300,
-		  edge: 'left',
-		  closeOnClick: true
+		  menuWidth: 300
 	    }
 	  );
 	

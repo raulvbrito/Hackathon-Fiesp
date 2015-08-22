@@ -126,6 +126,9 @@ form#cadastroForm{
 	display: none;
 	margin-right: -0.4rem !important;
 }
+.no-margin, .no-margin ul.collection{
+	margin: 0 !important;
+}
 .collection-item input[type="number"]{
 	margin-bottom: 0;
 	text-align: center;

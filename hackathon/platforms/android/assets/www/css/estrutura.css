@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(http://fonts.gstatic.com/s/materialicons/v7/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+
+/*Structure Classes*/
+.clear{ clear: both; }
+.left{ float: left; }
+.center{ margin: 0 auto !important; }
+.right{ float: right; }
+.bold{ font-weight: bold; }
+.container{	height: 100%; width: 100%; }
+.nav-wrapper i{ font-size: 1.9rem !important; margin: 0 1rem; }
+.nav-wrapper .button-collapse, .nav-wrapper .button-collapse i{ height: 100%; line-height: 59px; }
+.nav-wrapper .brand-name{ font-size: 1.4rem; }
+.side-nav .collapsible-header{ font-size: 1.3rem; margin: 0; }
+.container{ overflow-x: hidden; }
+.row{ margin: 0 auto; }
+.input-field label{ left: 0; }
+.input-field:not(:first-child){ margin-top: 0.5rem; }
+.input-error{ margin-top: -2rem; width: 100%; }
+.preloader-wrapper{ display: none; left: 10.8rem; position: absolute; text-align: center; top: 11.3rem; vertical-align: middle; }
+.progress{ display: none; margin: 0; }
+h6{ text-align: left; }
+.card-content p, .modal-content p{ text-align: justify; }
+.collection{ border-left: none;  border-right: none; }
+.collection .collection-item{ padding: 15px 20px !important; text-align: left; border-left: none;  border-right: none; }
+.collection .collection-item.avatar{ min-height: 65px; }
+#checkout-card .card-action a{ margin-right: 0 !important; padding: 0.5rem 1rem; }
+.modal{ z-index: 2; }
+.modal#modalMap{ max-height: 100%; top: 3%; width: 92%; }
+.modal#modalMap #map-canvas{ min-height: 250px; max-height: 350px; }
+/*=================*/
+
+/*Icons*/
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  word-wrap: normal;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+/*====*/
+
+/*List Icons*/
+.circle{ background-position: center; background-repeat: no-repeat; background-size: 100%; height: 50px !important; width: 50px !important; }
+.circle#carne-bovina{ background-image: url(../img/carne-bovina.jpg); }
+.circle#macarrao{ background-image: url(../img/macarrao.jpg); }
+.circle#queijo{ background-image: url(../img/queijo.jpg); }
+.circle#creme-de-leite{ background-image: url(../img/creme-de-leite.jpg); }
+/*==========*/
+
+/*Images*/
+.icon{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.icon.logo{ background-image: url(../img/icon.png); height: 70px; width: 70px;}
+.icon.camera{ background-image: url(../img/camera-icon.svg); width: 50px; height: 50px;}
+/*======*/
+
+html{
+	font-family: "Roboto Light", sans-serif !important;
+	overflow-x: hidden;
+	touch-action: manipulation;
+}
+body{
+	height: 100%;
+	margin: 0;
+	transition: opacity ease-in 0.2s;
+	-webkit-overflow-scrolling: touch;
+	-webkit-tap-highlight-color: transparent;
+	width: 100%;
+}
+nav, .report .collapsible-header{
+	height: 61px;
+	line-height: 59px;
+}
+i.mdi-action-shopping-cart{
+	border-radius: 60px;
+	text-align: center;
+	width: 60px;
+}
+form#cadastroForm{
+	display: none;
+}
+.input-field#pesquisa-input-field{
+	height: 50px;
+	margin-top: 0;
+}
+.input-field.pinned{	
+	width: 100%;
+	z-index: 10;	
+}
+.input-field#pesquisa-input-field i{
+	font-size: 27px;
+  	margin-left: 1rem;
+}
+.input-field#pesquisa-input-field input{ 
+ 	height: 100%;
+ 	padding-left: 1rem;
+ 	width: 96%;
+}
+.product-status{
+	font-size: 2.2rem;
+  	padding-top: 0.8rem !important;
+}
+.product-status i.mdi-action-done{
+	display: none;
+	margin-right: -0.4rem !important;
+}
+.collection-item input[type="number"]{
+	margin-bottom: 0;
+	text-align: center;
+}
+#checkout-card .card-action{
+	border-top: none !important;
+	padding: 10px !important;
+	text-align: right;
+}
+.modal ul.collection{
+	margin-bottom: 0;
+}
+.modal ul.collection li{
+	padding-left: 6rem !important;
+	width: 100%;
+}
+i.mdi-action-perm-identity{
+	font-size: 3rem !important;
+}
+.card#fornecedor-card .card-action{
+	padding: 10px;
+}
+.card#fornecedor-card .card-action a{
+	margin-right: 0;
+	padding: 8px;
+}
+#pendentes-list{
+	padding-top: 0;
+}
+.report .collapsible-header{
+	padding-right: 0;
+}
+.report .collapsible-header i {
+	margin-right: 0;
+}
+.report .collapsible-body li{
+	padding-top: 1rem;
+}
+.report .collapsible-body a{
+	line-height: 20px;
+}
+.container#login-container .row{
+	padding: 10rem 1rem 6rem;
+	vertical-align: middle;
+}
+.row.content{
+	padding: 1.2rem 0.9rem;
+}
+.row.content .collapsible-header, .row.content .collapsible-body{
+	text-align: left;
+}
+.collapsible-body .btn{
+	margin-left: 7rem !important;
+  	margin-bottom: 2rem !important;
+}
+footer{
+	bottom: 0;
+	text-align: center;
+}

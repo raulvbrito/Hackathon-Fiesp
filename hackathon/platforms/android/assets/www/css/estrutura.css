@@ -16,6 +16,7 @@
 .nav-wrapper .button-collapse, .nav-wrapper .button-collapse i{ height: 100%; line-height: 59px; }
 .nav-wrapper .brand-name{ font-size: 1.4rem; }
 .side-nav .collapsible-header{ font-size: 1.3rem; margin: 0; }
+.side-nav a{ height: 60px; line-height: 60px;}
 .container{ overflow-x: hidden; }
 .row{ margin: 0 auto; }
 .input-field label{ left: 0; }
@@ -149,6 +150,7 @@ i.mdi-action-perm-identity{
 }
 .menu-banner{ 
 	background-image: url('../img/menu-banner.jpg'); 
+	padding-bottom: 0.5rem !important;
 }
 .menu-banner .user-info{
 	line-height: 1.9rem;

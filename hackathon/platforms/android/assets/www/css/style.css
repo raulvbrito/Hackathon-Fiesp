@@ -8,7 +8,7 @@ body{ background-color: #e1e1e1; }
 .btn{ background-color: #1474a1; }
 .btn:hover{ background-color: #0d4f6d; }
 .report .mdi-action-assessment{ color: #198ec4 !important; }
-.nav-wrapper li i{ color: #999; }
+.nav-wrapper li i{ color: #666; }
 .report .collapsible-body li:hover{ background-color: #fff !important; }
 .report a{ color: #444 !important; } 
 .nav-wrapper li:not(.report):hover i, .nav-wrapper li:not(.report):hover a{ color: #fff; }

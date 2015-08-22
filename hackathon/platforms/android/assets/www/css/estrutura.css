@@ -24,9 +24,9 @@
 .input-error{ margin-top: -2rem; width: 100%; }
 .preloader-wrapper{ display: none; left: 10.8rem; position: absolute; text-align: center; top: 11.3rem; vertical-align: middle; }
 .progress{ display: none; margin: 0; }
-h6{ text-align: left; }
+h5, h6{ text-align: left; }
 .card-content p, .modal-content p{ text-align: justify; }
-.collection{ border-left: none;  border-right: none; }
+.collection{ border-left: none;  border-right: none; margin: 0; }
 .collection .collection-item{ padding: 15px 20px !important; text-align: left; border-left: none;  border-right: none; }
 .collection .collection-item.avatar{ min-height: 80px; }
 #checkout-card .card-action a{ margin-right: 0 !important; padding: 0.5rem 1rem; }
@@ -38,7 +38,7 @@ h6{ text-align: left; }
 .percent-chart{ display: none; text-align: center; }
 .chart-title{ text-align: center; }
 .list{ margin-top: 2rem !important; }
-.list .collection{ box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); }
+.list{ box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); }
 /*=================*/
 
 /*Icons*/
@@ -162,7 +162,20 @@ i.mdi-action-perm-identity{
 	background-image: url('../img/menu-banner.jpg');
 	height: 180px;
 	margin-top: -5rem; 
+	padding-left: 2rem;
+	padding-top: 8rem;
 	width: 100%
+}
+.image-header b{
+	font-size: 2rem;
+}
+.header-title{
+	border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+	padding: 1rem;
+}
+.header-title h5{
+	font-size: 1.2rem !important;
 }
 .menu-banner{ 
 	background-image: url('../img/menu-banner.jpg'); 

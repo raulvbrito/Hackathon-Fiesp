@@ -147,18 +147,7 @@ i.mdi-action-perm-identity{
 #pendentes-list{
 	padding-top: 0;
 }
-.report .collapsible-header{
-	padding-right: 0;
-}
-.report .collapsible-header i {
-	margin-right: 0;
-}
-.report .collapsible-body li{
-	padding-top: 1rem;
-}
-.report .collapsible-body a{
-	line-height: 20px;
-}
+.menu-banner{ background-image: url('../img/menu-banner.png'); height: 9.9rem;}
 .container#login-container .row{
 	padding: 10rem 1rem 6rem;
 	vertical-align: middle;

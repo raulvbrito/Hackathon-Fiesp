@@ -45,7 +45,7 @@ function login(form){
 //        }
 //    });
 	
-	location.href = 'enviar_arquivos.html';
+	location.href = 'dashboard.html';
 }
 
 function cadastrarUsuario(form){	

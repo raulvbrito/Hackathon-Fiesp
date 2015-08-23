@@ -19,3 +19,5 @@ body{ background-color: #e1e1e1; }
 h5{ color: #198ec4; }
 .side-nav .collapsible-header, .side-nav .collapsible-header i, .collapsible li.active .collapsible-header, footer p{ color: #fff !important; }
 footer a{ color: #ccc; }
+.switch label input[type=checkbox]:checked+.lever { background-color: #198ec4 !important; }
+.switch label input[type=checkbox]:checked+.lever:after { background-color: #0F5271 !important; }

@@ -1,21 +1,14 @@
 $(document).ready(function(){
-	loadDemandas();
-});
-
-function atividadeDescricao(url){
-	localStorage.setItem('atividade_descricao', url);
-	location.href = 'atividade_descricao.html';
-}
-
-function loadDemandas(){
+	var atividade_descricao = localStorage.getItem('atividade_descricao');
+	
 	$.ajax({
        type: 'GET',
-       url: "https://agile-sands-2308.herokuapp.com/oportunidades.json",
+       url: 'https://agile-sands-2308.herokuapp.com/oportunidades/'+atividade_descricao+'.json',
        success: function(data){
        	var atividades_list = $(".atividades-list");
        	console.log(data);
        	$.each(data, function(index, value){
-       		var item = '<li class="collection-item avatar waves-effect col s12 teatro" onclick=\"atividadeDescricao('+data[index].id+');\">'
+       		var item = '<li class="collection-item avatar waves-effect col s12 teatro">'
        				 + 		'<i class="circle" style="background-image: url('+data[index].imagem+')"></i>'
        				 +		'<div class="col s1 right product-status">'
        				 +			'<a href="#modalMap" class="modal-trigger"></a>'
@@ -34,4 +27,4 @@ function loadDemandas(){
            alert('ERRO!');
        }
     });
-}
+});

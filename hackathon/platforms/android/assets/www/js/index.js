@@ -43,8 +43,7 @@ function login(form){
     	url: "https://agile-sands-2308.herokuapp.com/user/login.json",
     	success: function(data){
         	console.log(data);
-            alert('Login efetuado com sucesso!');
-            location.href = 'atividades.html';
+            location.href = 'dashboard.html';
             localStorage.setItem("usuarioData", JSON.stringify(data));
         },
         error: function(data){

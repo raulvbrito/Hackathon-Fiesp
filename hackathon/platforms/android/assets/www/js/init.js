@@ -3,7 +3,7 @@ function onDeviceReady() {
 }
 document.addEventListener('deviceready', onDeviceReady, true);
 
-$(function(){	
+$(document).ready(function(){	
 	$('select').material_select();
 	
 	var userData = JSON.parse(localStorage.getItem("usuarioData"));

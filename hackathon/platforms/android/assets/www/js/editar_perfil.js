@@ -23,10 +23,10 @@ function updateUsuario(form){
 	       data: form,
 	       url: "https://agile-sands-2308.herokuapp.com/users/" + userData["id"] + ".json",
 	       success: function(data){
-	           console.log(data);
+	    	   console.log(JSON.stringify(data));
+	           localStorage.setItem('usuarioData', JSON.stringify(data));
 	           Materialize.toast('Conta atualizada com sucesso!', 3000);
 	           location.href = 'perfil.html';
-	       	});
 	       },
 	       error: function(){
 	           console.log(data);

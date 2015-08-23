@@ -118,6 +118,23 @@ form#cadastroForm{
  	padding-left: 1rem;
  	width: 96%;
 }
+.landing-picture{
+	background-image: url(../img/bg_inicial.png);
+	height: 100%;
+	padding-top: 14rem;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+}
+.landing-picture .logo{
+	background-image: url(../img/logo.png) !important;
+    background-size: 59%;
+    height: 100px;
+    width: 100%;
+}
+.landing-picture p{
+	text-align: center;
+}
 .product-status{
 	font-size: 2.2rem;
   	padding-top: 0.8rem !important;

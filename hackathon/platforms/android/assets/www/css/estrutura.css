@@ -223,7 +223,7 @@ i.mdi-action-perm-identity{
 	margin-right: 2rem;
 	box-shadow: none !important;
 }
-#perfil-content .card{
+#perfil-content .card, .list .card{
 	box-shadow: none;
 	margin-top: 0;
 }

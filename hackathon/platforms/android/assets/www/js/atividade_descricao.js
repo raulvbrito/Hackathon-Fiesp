@@ -5,22 +5,18 @@ $(document).ready(function(){
        type: 'GET',
        url: 'https://agile-sands-2308.herokuapp.com/oportunidades/'+atividade_descricao+'.json',
        success: function(data){
-       	var atividades_list = $(".atividades-list");
-       	console.log(data);
-       	$.each(data, function(index, value){
-       		var item = '<li class="collection-item avatar waves-effect col s12 teatro">'
-       				 + 		'<i class="circle" style="background-image: url('+data[index].imagem+')"></i>'
-       				 +		'<div class="col s1 right product-status">'
-       				 +			'<a href="#modalMap" class="modal-trigger"></a>'
-       				 +		'</div>'
-       				 +		'<div class="col s9 right">'
-       				 +			'<span class="title">'+data[index].titulo+'</span>'
-       				 +			'<p class="description">'+data[index].categoria+' - '+data[index].horas+' horas</p>'
-       				 +		'</div>'
-       				 +	'</li>';
-       		console.log(item);
-       		atividades_list.append(item);
-       	});
+       	var card_content = $(".card-content");
+       	$('.header-title h5').html(data.organizacao_nome);
+   		var item = 	'<i class="icon circle left" style="background-image: url('+data.imagem+')"></i>'
+   				 +	'<div class="col s9 user-info-to-edit" style="text-align: left">'
+   				 +		'<span class="title bold">'+data.titulo+'</span>'
+  				 +		'<p class="description">'+data.categoria+' - '+data.horas+' horas</p>'
+  				 + 	'</div>'
+  				 + 	'<div class="col s12" style="padding: 0; margin: 1rem 0">'
+  				 +		'<p>'+data.descricao+'</p>'
+  				 +		'<div class="clear"></div>'
+   				 +	'</div>';
+   		card_content.append(item);
        },
        error: function(){
            console.log(data);
@@ -28,3 +24,8 @@ $(document).ready(function(){
        }
     });
 });
+
+function atividadeAceita(){
+	localStorage.setItem('atividade_aceita', 'true');
+	location.href = "atividades.html";
+}

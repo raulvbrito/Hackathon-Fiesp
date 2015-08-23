@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	if(localStorage.getItem('atividade_aceita')){
+		Materialize.toast('Sincronização concluída', 3000);
+		localStorage.removeItem('atividade_aceita');
+	}
+	
 	loadDemandas();
 });
 
@@ -13,7 +18,6 @@ function loadDemandas(){
        url: "https://agile-sands-2308.herokuapp.com/oportunidades.json",
        success: function(data){
        	var atividades_list = $(".atividades-list");
-       	console.log(data);
        	$.each(data, function(index, value){
        		var item = '<li class="collection-item avatar waves-effect col s12 teatro" onclick=\"atividadeDescricao('+data[index].id+');\">'
        				 + 		'<i class="circle" style="background-image: url('+data[index].imagem+')"></i>'
@@ -25,7 +29,6 @@ function loadDemandas(){
        				 +			'<p class="description">'+data[index].categoria+' - '+data[index].horas+' horas</p>'
        				 +		'</div>'
        				 +	'</li>';
-       		console.log(item);
        		atividades_list.append(item);
        	});
        },

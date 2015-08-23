@@ -6,6 +6,10 @@ document.addEventListener('deviceready', onDeviceReady, true);
 $(function(){	
 	$('select').material_select();
 	
+	var userData = JSON.parse(localStorage.getItem("usuarioData"));
+	$(".nome").html(userData["name"]);
+	$(".email").html(userData["username"]);
+	
 	var deviceHeight = $(document).height();
 	$('body').css('height', deviceHeight);
 	 

@@ -1,7 +1,4 @@
 $(document).ready(function(){
-	var userData = JSON.parse(localStorage.getItem("usuarioData"));
-	$(".nome").html(userData["name"])
-	$(".email").html(userData["username"])
 	$(".aprovacao").attr("data-percent", userData["projetos"])
 	$(".desempenho").attr("data-percent", userData["horas"])
 	$(".desempenhoTxt").html(userData["horas"] + "h")

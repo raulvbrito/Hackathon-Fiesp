@@ -22,6 +22,7 @@
 .input-field label{ left: 0; }
 .input-field:not(:first-child){ margin-top: 0.5rem; }
 .input-error{ margin-top: -2rem; width: 100%; }
+.btn{ display: block; }
 .preloader-wrapper{ display: none; left: 10.8rem; position: absolute; text-align: center; top: 11.3rem; vertical-align: middle; }
 .progress{ display: none; margin: 0; }
 h5, h6{ text-align: left; }
@@ -121,7 +122,7 @@ form#cadastroForm{
 .landing-picture{
 	background-image: url(../img/bg_inicial.png);
 	height: 100%;
-	padding-top: 14rem;
+	padding-top: 11rem;
 	position: absolute;
 	width: 100%;
 	z-index: 2;
@@ -133,7 +134,12 @@ form#cadastroForm{
     width: 100%;
 }
 .landing-picture p{
+	font-size: 1.3rem;
 	text-align: center;
+}
+.yellow-btn{
+	margin-bottom: 2rem !important;
+	margin-top: 4rem !important;
 }
 .product-status{
 	font-size: 2.2rem;

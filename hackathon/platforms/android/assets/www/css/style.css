@@ -8,6 +8,7 @@ body{ background-color: #e1e1e1; }
 .input-field input.invalid:focus, .input-field input.invalid{ border-bottom: 1px solid #f09232; box-shadow: 0 1px 0 0 #f09232; }
 .input-error.active::after{ color: #f09232 !important; }
 .btn{ background-color: #1474a1; }
+.yellow-btn{ background-color: #FFD916 !important; color: #0088C8 !important; }
 .btn:hover{ background-color: #0d4f6d; }
 .report .mdi-action-assessment{ color: #198ec4 !important; }
 .nav-wrapper li i, .user-info-to-edit{ color: #666; }

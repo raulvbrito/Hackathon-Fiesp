@@ -1,7 +1,7 @@
 $(document).ready(function(){	
 
-	TOKEN = "lWyD+pRka4fN0agKZINbMk08Js5jOWvHK8t1c2h/twv4/MKiJHPv5uYXJoc2y+55RCcqauLLHqGNHASX0UNI7A==";
-	DOMAIN_BASE = "http://hackathon.goldarkapi.com";
+	// RECUPERAR DAtA
+	// JSON.parse(localStorage.getItem("usuarioData"));
 
 	$('.yellow-btn').click(function(){
 		$('.landing-picture').fadeOut();
@@ -45,6 +45,7 @@ function login(form){
         	console.log(data);
             alert('Login efetuado com sucesso!');
             location.href = 'atividades.html';
+            localStorage.setItem("usuarioData", JSON.stringify(data));
         },
         error: function(data){
             console.log(data);

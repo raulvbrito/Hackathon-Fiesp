@@ -37,12 +37,12 @@ function login(form){
     	data: form,
     	url: DOMAIN_BASE + "/sessions",
     	headers: {
-    		'X-Auth-Token' : TOKEN
-   		},
+	    	'X-Api-Token' : TOKEN
+	   	},
     	success: function(data){
         	console.log(data);
             alert('Login efetuado com sucesso!');
-            location.href = 'dashboard.html';
+            location.href = 'atividades.html';
         },
         error: function(){
             console.log(data);
@@ -50,7 +50,7 @@ function login(form){
         }
     });
 
-    location.href = 'dashboard.html';
+    location.href = 'atividades.html';
 }
 
 function cadastrarUsuario(form){	

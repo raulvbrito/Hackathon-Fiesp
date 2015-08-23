@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	if(localStorage.getItem('atividade_aceita')){
-		Materialize.toast('Sincronização concluída', 3000);
+		Materialize.toast('Ajuda solicitada com sucesso', 3000);
 		localStorage.removeItem('atividade_aceita');
 	}
 	

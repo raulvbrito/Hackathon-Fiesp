@@ -31,7 +31,7 @@ $(document).ready(function(){
 });
 
 function login(form){
-	$('.preloader-wrapper').fadeIn();
+//	$('.preloader-wrapper').fadeIn();
 	$.ajax({
     	type: 'POST',
     	data: form,
@@ -44,13 +44,13 @@ function login(form){
             alert('Login efetuado com sucesso!');
             location.href = 'atividades.html';
         },
-        error: function(){
+        error: function(data){
             console.log(data);
-            alert('Ocorreu um erro ao tentar cadastrar o usuário');
+            Materialize.toast('Falha ao logar. Usuário ou senha incorretos', 3000);
         }
     });
 
-    location.href = 'atividades.html';
+//    location.href = 'dashboard.html';
 }
 
 function cadastrarUsuario(form){	
@@ -70,7 +70,7 @@ function cadastrarUsuario(form){
        },
        error: function(){
            console.log(data);
-           alert('Erro ao tentar cadastrar um usuário');
+           Materialize.toast('Erro ao cadastrar usuário', 3000);
        }
    });
 	

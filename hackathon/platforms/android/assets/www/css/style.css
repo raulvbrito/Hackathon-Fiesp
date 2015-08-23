@@ -2,7 +2,7 @@ body{ background-color: #e1e1e1; }
 .nav-wrapper.no-background{ background-color: transparent !important; }
 .container#login-container, .nav-wrapper, .collapsible-header.active, .report, .report:hover, .report.active, .side-nav li:hover, .side-nav li.active{	background-color: #198ec4 !important; }
 .card-title{ color: #198ec4 !important; }
-.report:hover, .report.active, .side-nav li:hover, .side-nav li.active, .report .mdi-action-assessment{ color: #fff; }
+.report:hover, .report.active, .side-nav li:hover, .side-nav li.active, .report .mdi-action-assessment, .image-header{ color: #fff; }
 .input-field input{ border-bottom: 1px solid #FC0; color: #fff; }
 .input-field input:focus:not([readonly]), .input-field input:focus, .input-field input.valid{ border-bottom: 1px solid #FFCC00; box-shadow: 0 1px 0 0 #FFCC00; }
 .input-field input.invalid:focus, .input-field input.invalid{ border-bottom: 1px solid #f09232; box-shadow: 0 1px 0 0 #f09232; }
@@ -10,10 +10,10 @@ body{ background-color: #e1e1e1; }
 .btn{ background-color: #1474a1; }
 .btn:hover{ background-color: #0d4f6d; }
 .report .mdi-action-assessment{ color: #198ec4 !important; }
-.nav-wrapper li i{ color: #666; }
-.report .collapsible-body li:hover{ background-color: #fff !important; }
+.nav-wrapper li i, .user-info-to-edit{ color: #666; }
+.header-title{ background-color: #fff !important; }
 .report a{ color: #444 !important; } 
-.nav-wrapper li:not(.report):hover i, .nav-wrapper li:not(.report):hover a{ color: #fff; }
-h6{ color: #198ec4; }
+.nav-wrapper li:not(.report):hover i, .nav-wrapper li:not(.report):hover a{ color: #444; }
+h5{ color: #198ec4; }
 .side-nav .collapsible-header, .side-nav .collapsible-header i, .collapsible li.active .collapsible-header, footer p{ color: #fff !important; }
 footer a{ color: #ccc; }

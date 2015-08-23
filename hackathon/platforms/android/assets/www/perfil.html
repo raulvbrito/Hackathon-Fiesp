@@ -5,7 +5,6 @@
         <meta charset="utf8"/>
         <title>Responsa</title>
         <link href="css/materialize.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css"/>
         <link href="css/estrutura.css" rel="stylesheet" type="text/css"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
@@ -24,8 +23,8 @@
 					  	<li><i class="mdi-action-assignment-ind left"></i><a href="perfil.html">Meu Perfil</a></li>
 				  		<li><i class="mdi-editor-insert-chart left"></i><a href="dashboard.html">Progresso</a></li>
 				  		<li><i class="mdi-action-language left"></i><a href="atividades.html">Atividades</a></li>
-				    	<li><i class="mdi-action-settings left"></i><a href="visualizar_arquivos.html">Configurações</a></li>
-				    	<li><i class="mdi-action-info-outline left"></i><a href="sobre.html">Sobre</a></li>
+<!-- 				    	<li><i class="mdi-action-settings left"></i><a href="visualizar_arquivos.html">Configurações</a></li> -->
+<!-- 				    	<li><i class="mdi-action-info-outline left"></i><a href="sobre.html">Sobre</a></li> -->
 				    	<li><i class="mdi-action-settings-power left"></i><a href="index.html">Sair</a></li>
 				  	</ul>
 				  	<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -52,84 +51,85 @@
 				</div>
 				<a class="btn-floating btn-large waves-effect waves-light blue right"><i class="material-icons">mode_edit</i></a>
 			</div>
-			<div class="row content">
+			<div class="row content" id="perfil-content">
 			     <div class="col s12 m6">
+			     	<div class="header-title">
+						<h5>Dados Pessoais</h5>
+					</div>
 			       <div class="card" id="fornecedor-card">
 			         <div class="card-content">
-			           <span class="card-title">Desempenho</span>
-			           <div class="chart col s6 left">
-			           	<div class="percentage easyPieChart" data-percent="73">
-			           		<span class="percent-chart">130h</span>
-			           	</div>
-			           	<div class="chart-title text-center">Horas Trabalhadas</div>
+			           <div class="icon circle person-head left"></div>
+			           <div class="col s7 user-info-to-edit">
+			           	<span class="bold">Nome</span><br>
+			           	<span>Raul Brito</span><br><br>
+			           	<span class="bold">Email</span><br>
+			           	<span>raulvbrito@gmail.com</span><br><br>
+			           	<span class="bold">Login</span><br>
+			           	<span>raulvbrito</span><br><br>
+			           	<span class="bold">Senha</span><br>
+			           	<span>**********</span>
 			           </div>
-			           <div class="chart right">
-			           	<div class="percentage easyPieChart" data-percent="95">
-			           		<span class="percent-chart">95%</span>
-			           	</div>
-			           	<div class="chart-title text-center">Aprovação</div>
-			           </div>
+			           <div class="clear"></div>
 			         </div>
 			         <div class="clear"></div>
-<!-- 			         <div class="card-action"> -->
-<!-- 			           <a href="#" class="waves-effect">Sincronizar</a> -->
-<!-- 			           <a class="waves-effect modal-trigger" href="#modalMap">Mapa</a> -->
-<!-- 			         </div> -->
+			         <div class="card-action">
+			           <a class="waves-effect right">Completar Cadastro</a>
+			         </div>
 			       </div>
-			       <div class="row center list" id="ultimos-trabalhos-list">
-						<h6 class="bold">Últimos Trabalhos</h6>
-						 <ul class="collection">
-						    <li class="collection-item avatar waves-effect col s12 teatro">
-						      <i class="circle mdi-action-query-builder"></i>
-						      <div class="col s1 right product-status">
-						      	  <a href="#modalMap" class="modal-trigger"></a>
-						      </div>
-						      <div class="col s9 right">
-							      <span class="title">Desenvolvimento de Site</span>
-							      <p class="description">Programação - 80 horas</p>
-						      </div>
-						    </li>
-						    <li class="collection-item avatar waves-effect col s12 teatro">
-						      <i class="circle mdi-action-query-builder"></i>
-						      <div class="col s1 right product-status">
-						      	  <a href="#modalMap" class="modal-trigger"></a>
-						      </div>
-						      <div class="col s9 right">
-							      <span class="title">Desenvolvimento de Site</span>
-							      <p class="description">Programação - 80 horas</p>
-						      </div>
-						    </li>
-						    <li class="collection-item avatar waves-effect col s12 teatro">
-						      <i class="circle mdi-action-query-builder"></i>
-						      <div class="col s1 right product-status">
-						      	  <a href="#modalMap" class="modal-trigger"></a>
-						      </div>
-						      <div class="col s9 right">
-							      <span class="title">Desenvolvimento de Site</span>
-							      <p class="description">Programação - 80 horas</p>
-						      </div>
-						    </li>
-						    <li class="collection-item avatar waves-effect col s12 teatro">
-						      <i class="circle mdi-action-query-builder"></i>
-						      <div class="col s1 right product-status">
-						      	  <a href="#modalMap" class="modal-trigger"></a>
-						      </div>
-						      <div class="col s9 right">
-							      <span class="title">Desenvolvimento de Site</span>
-							      <p class="description">Programação - 80 horas</p>
-						      </div>
-						    </li>
-						 </ul>
-					</div>
+<!-- 			       <div class="row center list" id="ultimos-trabalhos-list"> -->
+<!-- 						<div class="header-title"> -->
+<!-- 							<h5>Últimos Trabalhos</h5> -->
+<!-- 						</div> -->
+<!-- 						 <ul class="collection"> -->
+<!-- 						    <li class="collection-item avatar waves-effect col s12 teatro"> -->
+<!-- 						      <i class="circle mdi-action-query-builder"></i> -->
+<!-- 						      <div class="col s1 right product-status"> -->
+<!-- 						      	  <a href="#modalMap" class="modal-trigger"></a> -->
+<!-- 						      </div> -->
+<!-- 						      <div class="col s9 right"> -->
+<!-- 							      <span class="title">Desenvolvimento de Site</span> -->
+<!-- 							      <p class="description">Programação - 80 horas</p> -->
+<!-- 						      </div> -->
+<!-- 						    </li> -->
+<!-- 						    <li class="collection-item avatar waves-effect col s12 teatro"> -->
+<!-- 						      <i class="circle mdi-action-query-builder"></i> -->
+<!-- 						      <div class="col s1 right product-status"> -->
+<!-- 						      	  <a href="#modalMap" class="modal-trigger"></a> -->
+<!-- 						      </div> -->
+<!-- 						      <div class="col s9 right"> -->
+<!-- 							      <span class="title">Desenvolvimento de Site</span> -->
+<!-- 							      <p class="description">Programação - 80 horas</p> -->
+<!-- 						      </div> -->
+<!-- 						    </li> -->
+<!-- 						    <li class="collection-item avatar waves-effect col s12 teatro"> -->
+<!-- 						      <i class="circle mdi-action-query-builder"></i> -->
+<!-- 						      <div class="col s1 right product-status"> -->
+<!-- 						      	  <a href="#modalMap" class="modal-trigger"></a> -->
+<!-- 						      </div> -->
+<!-- 						      <div class="col s9 right"> -->
+<!-- 							      <span class="title">Desenvolvimento de Site</span> -->
+<!-- 							      <p class="description">Programação - 80 horas</p> -->
+<!-- 						      </div> -->
+<!-- 						    </li> -->
+<!-- 						    <li class="collection-item avatar waves-effect col s12 teatro"> -->
+<!-- 						      <i class="circle mdi-action-query-builder"></i> -->
+<!-- 						      <div class="col s1 right product-status"> -->
+<!-- 						      	  <a href="#modalMap" class="modal-trigger"></a> -->
+<!-- 						      </div> -->
+<!-- 						      <div class="col s9 right"> -->
+<!-- 							      <span class="title">Desenvolvimento de Site</span> -->
+<!-- 							      <p class="description">Programação - 80 horas</p> -->
+<!-- 						      </div> -->
+<!-- 						    </li> -->
+<!-- 						 </ul> -->
+<!-- 					</div> -->
 			     </div>
 		   	</div>
     		<div class="clear"></div>
     	</div>
     	<script src="cordova.js"></script>
     	<script src="js/jquery.js"></script>
-    	<script src="js/jquery.easypiechart.min.js"></script>
 		<script src="js/materialize.min.js"></script>
 		<script src="js/init.js"></script>
-		<script src="js/dashboard.js"></script>
     </body>
 </html>

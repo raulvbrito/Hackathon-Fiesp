@@ -193,9 +193,19 @@ i.mdi-action-perm-identity{
 	margin-bottom: 1rem;
 	width: 50px;
 }
+#perfil-content .header-title{
+	border-bottom: 1px solid #e1e1e1;
+}
 #perfil-content .person-head{
 	margin-right: 2rem;
-	text-shadow: none;
+	box-shadow: none !important;
+}
+#perfil-content .card{
+	box-shadow: none;
+	margin-top: 0;
+}
+.user-info-to-edit{
+	
 }
 .container#login-container .row{
 	padding: 10rem 1rem 6rem;

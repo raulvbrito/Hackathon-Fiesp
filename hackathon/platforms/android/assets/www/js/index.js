@@ -3,6 +3,10 @@ $(document).ready(function(){
 	TOKEN = "lWyD+pRka4fN0agKZINbMk08Js5jOWvHK8t1c2h/twv4/MKiJHPv5uYXJoc2y+55RCcqauLLHqGNHASX0UNI7A==";
 	DOMAIN_BASE = "http://hackathon.goldarkapi.com";
 
+	$('.yellow-btn').click(function(){
+		$('.landing-picture').fadeOut();
+	});
+	
 	$('form').on('submit', function(e){
 		e.preventDefault();
 		var form = $(this).serializeArray();
@@ -16,6 +20,7 @@ $(document).ready(function(){
 	});
 	
 	$('.cadastro').click(function(){
+		$('.landing-picture').fadeOut();
 		$('form#loginForm, footer').fadeOut('fast');
 		$('form#cadastroForm').fadeIn('slow').parent().css({
 			'padding-top':'7rem',

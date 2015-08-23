@@ -20,11 +20,9 @@
 							  	<span class="email"></span>
 						  	</div>
 					  	</li>
+					  	<li><i class="mdi-action-language left"></i><a href="atividades.html">Lista de Atividades</a></li>
+					  	<li><i class="mdi-editor-insert-chart left"></i><a href="dashboard.html">Progressos</a></li>
 					  	<li><i class="mdi-action-assignment-ind left"></i><a href="perfil.html">Meu Perfil</a></li>
-				  		<li><i class="mdi-editor-insert-chart left"></i><a href="dashboard.html">Progresso</a></li>
-				  		<li><i class="mdi-action-language left"></i><a href="atividades.html">Atividades</a></li>
-<!-- 				    	<li><i class="mdi-action-settings left"></i><a href="visualizar_arquivos.html">Configurações</a></li> -->
-<!-- 				    	<li><i class="mdi-action-info-outline left"></i><a href="sobre.html">Sobre</a></li> -->
 				    	<li><i class="mdi-action-settings-power left"></i><a href="index.html">Sair</a></li>
 				  	</ul>
 				  	<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -40,23 +38,25 @@
 			       <div class="card" id="fornecedor-card">
 			         <div class="card-content" style="padding: 20px 0;">
 			           <form id="perfilForm" method="post" name="perfilForm" class="col s12">
+		    			
 		    			<div class="input-field col s12">
-			          	  <input id="nm_usuario" name="username" placeholder="Nome Completo" type="text" class="validate">
+			          	  <input id="nm_usuario" name="user[username]" placeholder="Nome Completo" type="text" class="validate">
 		          		  <label class="input-error" data-error="Digite um nome"></label>
 				        </div>
+
 		    			<div class="input-field col s12">
-				          <input id="email" name="password" placeholder="Email" type="email" class="validate">
+				          <input id="user[email]" name="password" placeholder="Email" type="email" class="validate">
 				          <label class="input-error" data-error="Digite um email válido"></label>
 				        </div>
 				        <div class="input-field col s12">
-				          <input id="ds_senha" name="ds_senha" placeholder="Senha" type="password" class="validate">
+				          <input id="ds_senha" name="user[password]" placeholder="Senha" type="password" class="validate">
 				        </div>
 				        <div class="input-field col s12">
-				          <input id="confirm_password" name="confirm_password" placeholder="Confirmar Senha" type="password" class="validate">
+				          <input id="confirm_password" name="confirm" placeholder="Confirmar Senha" type="password" class="validate">
 				        </div>
 
 				        <div class="input-field col s12">
-						    <select name="faculdade">
+						    <select name="user[faculdade]">
 						      <option value="" disabled selected>Escolha sua Faculdade</option>
 						      <option value="IBTA">IBTA</option>
 						      <option value="PUC">PUC</option>
@@ -66,7 +66,7 @@
 						</div>
 
 						<div class="input-field col s12">
-						    <select name="curso">
+						    <select name="user[curso]">
 						      <option value="" disabled selected>Curso</option>
 						      <option value="Ciências da Computação">Ciências da Computação</option>
 						      <option value="Publicidade">Publicidade</option>
@@ -76,7 +76,7 @@
 						</div>
 
 						<div class="input-field col s12">
-				          <input id="ra" name="ra" placeholder="RA" type="text" class="validate">
+				          <input id="ra" name="user[ra]" placeholder="RA" type="text" class="validate">
 				        </div>
 
 				        <div class="col s12">
@@ -103,7 +103,7 @@
 							</div>
 						</div>
 
-				        <a class="waves-effect waves-light btn col s12 center cadastro-btn" style="margin-top: 2rem !important;">Atualizar Cadastro</a>
+				        <button type="submit" class="waves-effect waves-light btn col s12 center cadastro-btn" style="margin-top: 2rem !important;">Atualizar Cadastro</button>
 			           </form>
 			           <div class="clear"></div>
 			         </div>

@@ -1,5 +1,11 @@
 $(document).ready(function(){	
 
+	$.ajaxSetup({
+	  headers: {
+	    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+	  }
+	});
+
 	// RECUPERAR DAtA
 	// JSON.parse(localStorage.getItem("usuarioData"));
 
@@ -30,7 +36,6 @@ $(document).ready(function(){
 
 	$('.cadastro-btn').click(function(){
 		var form = $('form#cadastroForm').serializeArray();
-		
 		cadastrarUsuario(form);
 	});
 });
@@ -56,7 +61,6 @@ function login(form){
 }
 
 function cadastrarUsuario(form){	
-
 	$.ajax({
        type: 'POST',
        data: form,

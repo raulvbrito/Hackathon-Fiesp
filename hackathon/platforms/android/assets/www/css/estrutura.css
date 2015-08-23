@@ -193,6 +193,10 @@ i.mdi-action-perm-identity{
 	margin-bottom: 1rem;
 	width: 50px;
 }
+#perfil-content .person-head{
+	margin-right: 2rem;
+	text-shadow: none;
+}
 .container#login-container .row{
 	padding: 10rem 1rem 6rem;
 	vertical-align: middle;

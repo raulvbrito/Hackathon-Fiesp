@@ -63,7 +63,7 @@ function cadastrarUsuario(form){
        url: "https://agile-sands-2308.herokuapp.com/users.json",
        success: function(data){
            console.log(data);
-           alert('Conta criada com sucesso!');
+           Materialize.toast('Conta criada com sucesso!', 3000);
            $('form#cadastroForm').fadeOut('slow');
        	   $('form#loginForm').fadeIn('slow').parent().css({
        		'padding-top':'11rem',

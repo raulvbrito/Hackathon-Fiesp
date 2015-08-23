@@ -227,8 +227,8 @@ i.mdi-action-perm-identity{
 	box-shadow: none;
 	margin-top: 0;
 }
-.user-info-to-edit{
-	
+#perfilForm label{
+/* 	margin-left: 1rem !important; */
 }
 .container#login-container .row{
 	padding: 10rem 1rem 6rem;

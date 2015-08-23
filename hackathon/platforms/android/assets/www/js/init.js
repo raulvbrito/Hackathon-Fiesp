@@ -7,7 +7,6 @@ $(document).ready(function(){
 	$('select').material_select();
 	
 	var userData = JSON.parse(localStorage.getItem("usuarioData"));
-	console.log(userData);
 	$(".nome").html(userData["name"]);
 	$(".email").html(userData["username"]);
 	

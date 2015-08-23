@@ -3,7 +3,8 @@ body{ background-color: #e1e1e1; }
 .container#login-container, .nav-wrapper, .collapsible-header.active, .report, .report:hover, .report.active, .side-nav li:hover, .side-nav li.active{	background-color: #198ec4 !important; }
 .card-title{ color: #198ec4 !important; }
 .report:hover, .report.active, .side-nav li:hover, .side-nav li.active, .report .mdi-action-assessment, .image-header, .landing-picture p{ color: #fff !important; }
-.input-field input{ border-bottom: 1px solid #FC0; color: #fff; }
+.input-field input{ border-bottom: 1px solid #FC0 !important; color: #fff; }
+#perfilForm input{ color: #666; }
 .input-field input:focus:not([readonly]), .input-field input:focus, .input-field input.valid{ border-bottom: 1px solid #FFCC00; box-shadow: 0 1px 0 0 #FFCC00; }
 .input-field input.invalid:focus, .input-field input.invalid{ border-bottom: 1px solid #f09232; box-shadow: 0 1px 0 0 #f09232; }
 .input-error.active::after{ color: #f09232 !important; }

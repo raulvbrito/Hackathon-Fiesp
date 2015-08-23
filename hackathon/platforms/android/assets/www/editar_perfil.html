@@ -38,8 +38,8 @@
 						<h5>Editar Perfil</h5>
 					</div>
 			       <div class="card" id="fornecedor-card">
-			         <div class="card-content">
-			           <form id="loginForm" method="post" name="loginForm" class="col s12">
+			         <div class="card-content" style="padding: 20px 0;">
+			           <form id="perfilForm" method="post" name="perfilForm" class="col s12">
 		    			<div class="input-field col s12">
 			          	  <input id="nm_usuario" name="username" placeholder="Nome Completo" type="text" class="validate">
 		          		  <label class="input-error" data-error="Digite um nome"></label>
@@ -62,7 +62,7 @@
 						      <option value="PUC">PUC</option>
 						      <option value="Mackenzie">Mackenzie</option>
 						    </select>
-						    <label>Faculdade</label>
+<!-- 						    <label>Faculdade</label> -->
 						</div>
 
 						<div class="input-field col s12">
@@ -72,7 +72,7 @@
 						      <option value="Publicidade">Publicidade</option>
 						      <option value="Relações Públicas">Relações Públicas</option>
 						    </select>
-						    <label>Curso</label>
+<!-- 						    <label>Curso</label> -->
 						</div>
 
 						<div class="input-field col s12">
@@ -83,27 +83,27 @@
 				        	<label>Perfil Público</label>
 					        <div class="switch">
 							    <label>
-							      Off
+							      Não
 							      <input type="checkbox" name="perfil_publico">
 							      <span class="lever"></span>
-							      On
+							      Sim
 							    </label>
 							</div>
 						</div>
-
-						<div class="col s12">
+						<br>
+						<div class="col s12" style="margin-top: 1rem;">
 				        	<label>Ativar notificações</label>
 					        <div class="switch">
 							    <label>
-							      Off
+							      Não
 							      <input type="checkbox" name="notificacao">
 							      <span class="lever"></span>
-							      On
+							      Sim
 							    </label>
 							</div>
 						</div>
 
-				        <a class="waves-effect waves-light btn col s12 center cadastro-btn">Atualizar Cadastro</a>
+				        <a class="waves-effect waves-light btn col s12 center cadastro-btn" style="margin-top: 2rem !important;">Atualizar Cadastro</a>
 			           </form>
 			           <div class="clear"></div>
 			         </div>

@@ -193,6 +193,7 @@ i.mdi-action-perm-identity{
 	font-size: 2rem;
 }
 .header-title{
+	border-bottom: 1px solid #e1e1e1;
 	border-top-left-radius: 2px;
     border-top-right-radius: 2px;
 	padding: 0.7rem 1rem;

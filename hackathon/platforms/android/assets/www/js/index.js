@@ -36,9 +36,6 @@ function login(form){
     	type: 'POST',
     	data: form,
     	url: "https://agile-sands-2308.herokuapp.com/user/login.json",
-    	headers: {
-	    	'X-Api-Token' : TOKEN
-	   	},
     	success: function(data){
         	console.log(data);
             alert('Login efetuado com sucesso!');
@@ -58,7 +55,7 @@ function cadastrarUsuario(form){
 	$.ajax({
        type: 'POST',
        data: form,
-       url: DOMAIN_BASE + "/users",
+       url: "https://agile-sands-2308.herokuapp.com/users.json",
        success: function(data){
            console.log(data);
            alert('Conta criada com sucesso!');

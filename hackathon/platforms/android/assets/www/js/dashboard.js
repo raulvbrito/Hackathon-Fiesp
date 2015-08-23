@@ -1,19 +1,4 @@
 $(document).ready(function(){
-	
-	function loadDemandas(){
-		$.ajax({
-	       type: 'GET',
-	       url: "https://agile-sands-2308.herokuapp.com/oportunidades.json",
-	       success: function(data){
-	           console.log(data);   
-	       },
-	       error: function(){
-	           console.log(data);
-	           alert('ERRO!');
-	       }
-	    });
-	}
-
 });
 
 $(function(){

@@ -1,8 +1,5 @@
 $(document).ready(function(){
-	$(".aprovacao").attr("data-percent", userData["projetos"])
-	$(".desempenho").attr("data-percent", userData["horas"])
-	$(".desempenhoTxt").html(userData["horas"] + "h")
-	$(".aprovacaoTxt").html(userData["projetos"] + "%")
+	
 });
 
 $(function(){
